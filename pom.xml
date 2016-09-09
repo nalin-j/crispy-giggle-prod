@@ -8,17 +8,31 @@
     <artifactId>mytest</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>org.wso2</groupId>
+        <artifactId>wso2</artifactId>
+        <version>1</version>
+    </parent>
+
+    <scm>
+        <url>https://github.com/kasunbg/urban-adventure.git</url>
+        <developerConnection>scm:git:https://github.com/kasunbg/urban-adventure.git</developerConnection>
+        <connection>scm:git:https://github.com/kasunbg/urban-adventure.git</connection>
+        <tag>HEAD</tag>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
 </project>
+ 

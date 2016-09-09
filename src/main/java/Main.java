@@ -17,56 +17,10 @@
 */
 
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Optional<Double> aDouble = Optional.of(4.0).flatMap(Main::inverse).flatMap(Main::sqrt);
-
-        System.out.println(aDouble);
-
-        aDouble = Optional.of(-4.0).flatMap(Main::inverse).flatMap(Main::sqrt);
-
-        System.out.println(aDouble);
-
-        System.out.println();
-
-        Stream<String> stream = Stream.of("apple", "oranges", "banana", "apple", "grapes", "grapes");
-        List<String> list = Stream.of("apple", "oranges", "banana", "apple", "grapes", "grapes").collect(Collectors.toList());
-
-        Optional<String> concat = list.parallelStream().peek(s -> System.out.println(s.hashCode())).reduce((x, y) -> x + "-" + y);
-        System.out.println(concat);
-
-//        Stream<BigInteger> iteratingStream = Stream.iterate(BigInteger.ZERO, n -> n.add(new BigInteger(new byte[]{2}))).limit(10000);
-
-//        List<String> collect = stream
-//                .peek(System.out::println)
-//                .filter(s -> s.contains("ra"))
-//                .distinct()
-//                .collect(Collectors.toList());
-
-//        Boolean first = list.stream()
-//                .filter(s -> s.contains("ra"))
-//                .peek(System.out::println)
-//                .anyMatch(s -> s.contains("rda"));
-//                .sorted(Comparator.comparing(String::length).reversed())
-//                .max(String::compareTo);
-//                .collect(Collectors.toList());
-
-//        System.out.println("found " + first);
-//        System.out.println(collect);
-
-    }
-
-    public static Optional<Double> inverse(Double x) {
-        return x == 0 ? Optional.empty() : Optional.of(1/x);
-    }
-
-    public static Optional<Double> sqrt(Double x) {
-        return x < 0 ? Optional.empty() : Optional.of(Math.sqrt(x));
     }
 }
