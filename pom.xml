@@ -4,7 +4,7 @@
 
     <groupId>org.kasung.test</groupId>
     <artifactId>mytest</artifactId>
-    <version>1.0.7-SNAPSHOT</version>
+    <version>1.0.7</version>
     
 
     <parent>
@@ -17,7 +17,7 @@
         <url>https://github.com/kasunbg/legendary-journey-stg.git</url>
         <developerConnection>scm:git:https://github.com/kasunbg/legendary-journey-stg.git</developerConnection>
         <connection>scm:git:https://github.com/kasunbg/legendary-journey-stg.git</connection>
-        <tag>HEAD</tag>
+        <tag>v1.0.7</tag>
     </scm>
 
     <build>
