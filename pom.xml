@@ -13,6 +13,9 @@
         <version>1</version>
     </parent>
 
+
+
+
     <scm>
         <url>https://github.com/kasunbg/legendary-journey-stg.git</url>
         <developerConnection>scm:git:https://github.com/kasunbg/legendary-journey-stg.git</developerConnection>
